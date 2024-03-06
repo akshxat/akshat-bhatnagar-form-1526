@@ -1,0 +1,96 @@
+* {
+    font-family: Arial, Helvetica Neue, Helevetica, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 50rem;
+    margin: auto;
+}
+
+html, .wrapper, body, form {
+    height: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    max-width: 50rem;
+    background-color: #F5F5F5;
+    margin: 1rem;
+    padding: 2rem;
+    border-style: solid;
+    border-color: #DDD;
+}
+
+fieldset, input, textarea {
+    border-radius: 0.2rem;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 0.5rem;
+}
+
+#submit {
+    width: 5rem;
+    background-color: #6495ED;
+    border-style: none;
+    color: white;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    margin-top: 1rem;
+    width: 100%;
+    min-height: 2.3rem;
+    border-style: solid;
+    border-color: #DDD;
+    border-width: 0.1rem;
+}
+
+legend {
+    background-color: white;
+    padding: 1rem;
+    border-style: solid;
+    border-color: #DDD;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 25rem) {
+
+    #submit {
+        width: 7rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 1rem;
+        grid-column-gap: 1.5rem;
+    }
+
+    .name {
+        grid-area: 1/1/2/3;
+    }
+
+    .email {
+        grid-area: 1/3/2/5;
+    }
+
+    .message {
+        grid-area: 2/1/3/5;
+    }
+
+    .subtn {
+        grid-area: 3/1/4/5;
+    }
+}
+
